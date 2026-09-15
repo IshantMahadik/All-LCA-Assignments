@@ -1,1 +1,53 @@
+# Operations on Dictionary
 
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "course": "Python"
+}
+
+print("Original Dictionary:", student)
+
+# Accessing values
+print("Student Name:", student["name"])
+
+# Adding a new item
+student["marks"] = 85
+print("After Adding Marks:", student)
+
+# Updating a value
+student["age"] = 21
+print("After Updating Age:", student)
+
+# Deleting an item
+del student["course"]
+print("After Deleting Course:", student)
+
+# Displaying keys and values
+print("Keys:", student.keys())
+print("Values:", student.values())
+
+
+# Operations on Tuple
+
+numbers = (10, 20, 30, 20, 40)
+
+print("\nOriginal Tuple:", numbers)
+
+# Accessing elements
+print("First Element:", numbers[0])
+
+# Slicing
+print("First Three Elements:", numbers[:3])
+
+# Counting an element
+print("Count of 20:", numbers.count(20))
+
+# Finding the position of an element
+print("Position of 30:", numbers.index(30))
+
+# Length of tuple
+print("Length of Tuple:", len(numbers))
+
+# Checking an element
+print("Is 40 present?", 40 in numbers)
